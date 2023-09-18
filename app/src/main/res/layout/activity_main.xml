@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvVersionAndroidLB"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/tvVersionAndroidLB"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="@string/tvVersionAndroidLB" />
+
+        <TextView
+            android:id="@+id/tvVersionAndroid"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            tools:text="Off" />
+
+        <TextView
+            android:id="@+id/tvLigth"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/tvLigth"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="@string/tvLigth" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/btnOn"
+                android:textColor="@color/white"
+                tools:text="@string/btnOn" />
+
+            <Button
+                android:id="@+id/btnOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/btnOff"
+                android:textColor="@color/white"
+                tools:text="@string/btnOff" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tvLevelBaterryLB"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text="3. Level Battery"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tvLevelBaterry_2"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            tools:text="@string/tvLevelBaterry_2" />
+
+        <ProgressBar
+            android:id="@+id/pbLevelBaterry"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStorageLB"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/tvStorage"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            tools:text="@string/tvStorage" />
+
+        <EditText
+            android:id="@+id/etNameFile"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:hint="@string/etNameFile"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/btnSaveFile"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/tvConnectionLB"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/tvState"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:text="@string/tvState" />
+        <TextView
+            android:id="@+id/tvConexion"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Bluetooh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:text="@string/btnBluetooh" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
